@@ -1,0 +1,107 @@
+.todo {
+  width: 90vw;
+  margin: 10px auto;
+  padding: 20px;
+  background: rgba(106, 137, 204, 0.308);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .todo {
+    width: 100vw;
+    margin: 0;
+  }
+}
+
+#title {
+  padding-bottom: 10px;
+  color: #1e4388;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 530;
+}
+
+.chatbox__input {
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 1px 7px 1px rgba(128, 128, 128, 0.589);
+          box-shadow: 0px 1px 7px 1px rgba(128, 128, 128, 0.589);
+  border-radius: 3px;
+}
+
+.inputItems {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputItems > input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.button > button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #7473731c;
+  color: #555555;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.button > button:hover {
+  background: #68676725;
+}
+
+.filterOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.filterOptions .active {
+  color: #3387cc;
+  border-bottom: 1px solid #3387cc;
+}
+
+.filterOptions label {
+  margin: 0 20px;
+}
+
+.filterOptions span {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border-bottom: 1px solid transparent;
+  font-weight: 550;
+  cursor: pointer;
+  color: dimgray;
+}
+
+.filterOptions span:hover {
+  color: #3387cc;
+}
+/*# sourceMappingURL=Todo.css.map */

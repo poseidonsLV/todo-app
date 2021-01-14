@@ -1,0 +1,83 @@
+.todolist {
+  background: white;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.753);
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  .fa-check {
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(128, 128, 128, 0.3);
+    }
+  }
+  .fa-check.active {
+    background: rgba(62, 240, 157, 0.6);
+    color: rgb(15, 196, 111);
+  }
+  .task.active {
+    text-decoration: 1px line-through rgb(3, 167, 3);
+    color: rgba(43, 141, 43, 0.61);
+  }
+}
+.right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  #delete {
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 100px;
+    color: rgb(92, 92, 92);
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(128, 128, 128, 0.3);
+    }
+  }
+  #edit {
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 100px;
+    color: rgb(92, 92, 92);
+    margin-right: 10px;
+    &:hover {
+      background: rgba(128, 128, 128, 0.3);
+    }
+  }
+}
+.editingForm {
+  display: flex;
+  flex: 1;
+}
+.editingInput {
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  display: flex;
+  flex: 1;
+  width: 0px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: rgb(94, 94, 94);
+  &:focus {
+    box-shadow: 0px 0px 3px 0.1px rgba(62, 240, 157, 0.6);
+  }
+}
+.editingButton {
+  margin-right: 5px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  padding: 0.7rem 1.5rem;
+  &:hover {
+    background: rgba(177, 177, 177, 0.486);
+  }
+}
