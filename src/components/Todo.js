@@ -58,8 +58,10 @@ const Todo = () => {
     switch (status) {
       case "completed":
         setFilteredTodos(todos.filter((todo) => todo.done === true));
+        break;
       case "uncompleted":
         setFilteredTodos(todos.filter((todo) => todo.done === false));
+        break;
       default:
         setFilteredTodos(todos);
         break;
